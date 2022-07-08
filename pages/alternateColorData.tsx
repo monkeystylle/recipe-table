@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import React from 'react';
 import type { NextPage } from 'next';
+import styled from 'styled-components';
 
-const Home: NextPage = () => {
+type Props = {};
+
+const alternateColorData = (props: Props) => {
   return (
     <>
       <Wrapper>
@@ -46,7 +49,7 @@ const StyledTable = styled.table`
   tr,
   th,
   td {
-    border: 1px solid gray;
+    border: 1px solid #ddd;
     padding: 8px;
   }
 
@@ -70,4 +73,4 @@ const StyledTable = styled.table`
   width: 50%;
 `;
 
-export default Home;
+export default alternateColorData;
