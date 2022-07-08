@@ -5,6 +5,7 @@ import Spacer from '../components/Spacer';
 import AlternateColorData from '../components/AlternateColorData';
 import TwoSpanHeaderColumn from '../components/TwoSpanHeaderColumn';
 import ColGroup from '../components/ColGroup';
+import RowSpan from '../components/RowSpan';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
         <VerticalTableHeaders />
         <Spacer size={80} />
         <TwoSpanHeaderColumn />
+        <Spacer size={80} />
+        <RowSpan />
+
         <Spacer size={80} />
         <ColGroup />
         <Spacer size={80} />
