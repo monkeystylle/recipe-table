@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 type Props = {};
 
-const alternateColorData = (props: Props) => {
+const AlternateColorData = (props: Props) => {
   return (
     <>
       <Wrapper>
@@ -43,6 +43,7 @@ const alternateColorData = (props: Props) => {
 const Wrapper = styled.div`
   max-width: 1200px;
   margin: 64px auto;
+  margin-bottom: 0;
 `;
 
 const StyledTable = styled.table`
@@ -71,6 +72,15 @@ const StyledTable = styled.table`
   }
 
   width: 50%;
+
+  // use this code below if you want border radius
+
+  border-collapse: separate;
+
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  perspective: 1px;
+  overflow: hidden;
 `;
 
-export default alternateColorData;
+export default AlternateColorData;
